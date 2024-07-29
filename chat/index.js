@@ -18,7 +18,7 @@ getRespostaRobo = (msg) => {
     });
 
     resposta.on("end", () => {
-      io.emit('chat message', "IFBA: " + data);
+      io.emit('chat message', "Policía: " + data);
     });
 
   })  
