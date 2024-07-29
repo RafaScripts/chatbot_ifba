@@ -2,43 +2,43 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 import json
 
-CONVERSAS = [
-    "/Users/rafael/Downloads/chatterbot/conversas/saudacoes.json",
-    "/Users/rafael/Downloads/chatterbot/conversas/informacoes_basicas.json"
+CHATS = [
+    "/home/Rafael/Desktop/prj/chatbot_ifba/conversas/saudacoes.json",
+    "/home/Rafael/Desktop/prj/chatbot_ifba/conversas/informacoes_basicas.json"
 ]
 
-def iniciar():
-    robo = ChatBot("Robô de Atendimento da Policia")
-    treinador = ListTrainer(robo)
+def start():
+    robot = ChatBot("Robô de Atendimento da Polícia")
+    treining = ListTrainer(robot)
 
-    return treinador
+    return treining
 
-def carregar_conversas():
-    conversas = []
+def load_chats():
+    chats = []
 
-    for arquivo_conversas in CONVERSAS:
-        with open(arquivo_conversas, "r") as arquivo:
-            conversas_para_treinamento = json.load(arquivo)
-            conversas.append(conversas_para_treinamento["conversas"])
+    for file_chats in CHATS:
+        with open(file_chats, "r") as file:
+            chats_to_treining = json.load(file)
+            chats.append(chats_to_treining["conversas"])
 
-            arquivo.close()
+            file.close()
 
-    return conversas
+    return chats
 
-def treinar(treinador, conversas):
-    for conversa in conversas:
-        for mensagens_resposta in conversa:
-            mensagens = mensagens_resposta["mensagens"]
-            resposta = mensagens_resposta["resposta"]
+def train(treining, chats):
+    for chat in chats:
+        for chat_responses in chat:
+            messages = chat_responses["mensagens"]
+            response = chat_responses["resposta"]
 
-            print(f"treinando o robô. Mensagens: {mensagens}. Resposta: {resposta}")
-            for mensagem in mensagens:
-                treinador.train([mensagem, resposta])
+            print(f"treinando o robô. Mensagens: {messages}. Resposta: {response}")
+            for message in messages:
+                treining.train([message, response])
 
 
 if __name__ == "__main__":
-    treinador = iniciar()
+    training = start()
 
-    conversas = carregar_conversas()
-    if conversas:
-        treinar(treinador, conversas)
+    chats = load_chats()
+    if chats:
+        train(training, chats)

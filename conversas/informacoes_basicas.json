@@ -2,23 +2,23 @@
     "conversas": [
         {
             "mensagens": [ "quais as delegacias da minha cidade?", "qual a delegacia mais proxima?" ],
-            "resposta": "O link a seguir possui o mapa com as delegacias e postos policiais da sua cidade"
+            "resposta": "O link a seguir possui o mapa com as delegacias e postos Políciais da sua cidade"
         },
         {
-            "mensagens": [ "O que precisa para entrar para a policia?", "quando sera o proximo concurso para a policia?", "o que precisa para entrar para a policia?",
-                "preciso ter ensino superior para entrar para a policia ?" ],
-            "resposta": "Neste link você pode encontrar informações sobre novos editais, o que precisa e entre outros.\nVale lembrar que para entrar para a policia os requisitos minimos são ensino medio completo, ser maior de 18 anos, não possuir ficha criminal."
+            "mensagens": [ "O que precisa para entrar para a Polícia?", "quando sera o proximo concurso para a Polícia?", "o que precisa para entrar para a Polícia?",
+                "preciso ter ensino superior para entrar para a Polícia ?" ],
+            "resposta": "Neste link você pode encontrar informações sobre novos editais, o que precisa e entre outros. Vale lembrar que para entrar para a Polícia os requisitos minimos são ensino medio completo, ser maior de 18 anos, não possuir ficha criminal."
         },
         {
             "mensagens": [ "fui roubado o que devo fazer?", "roubaram o meu celular", "como abrir um b.o por roubo ?" ],
             "resposta": "Neste link você pode abrir um Boletim de Ocorrencia, por favor informe local e hora, caracteristicas fisicas do assaltante (ex: possui tatuagem, altura, aparencia), modelo e o IMEI do aparelho caso tenha acesso."
         },
         {
-            "mensagens": [ "como denunciar som alto ?", "meu vizinho não desliga o som", "quero abrir um b.o por pertubação do sossego" ],
+            "mensagens": [ "como denunciar som alto ?", "meu vizinho não desliga o som", "quero abrir um b.o por pertubação do sossego", "meu vizinho ta com o som muito alto" ],
             "resposta": "Neste link você pode abrir um Boletim de Ocorrencia, lembrando que nesse caso, caso haja vontade de representar conta a outra parte, os dois individos serão levados ao cartorio, caso não, será realizada a orientação do individuo."
         },
         {
-            "mensagens": [ "preciso de uma viatura para meu endereço", "preciso da policia aqui", "preciso de um policial!" ],
+            "mensagens": [ "preciso de uma viatura para meu endereço", "preciso da Polícia aqui", "preciso de um Polícial!", "preciso da policia", "socorro", "me ajuda" ],
             "resposta": "preferencialmente ligue 190, mas caso não consiga Acesse este link para chamar uma viatura com urgencia."
         }
     ]

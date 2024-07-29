@@ -15,7 +15,7 @@ class TesteSaudacoes(unittest.TestCase):
             resposta = self.robo.get_response(saudacao)
             self.assertGreaterEqual(resposta.confidence, CONFIANCA_MINIMA)
             self.assertIn(
-                "Olá, sou o robô de atendimento do IFBA", 
+                "Olá, sou o robô de atendimento da Polícia. Como posso te ajudar?",
                 resposta.text
             )
 
@@ -28,7 +28,7 @@ class TesteSaudacoes(unittest.TestCase):
             resposta = self.robo.get_response(saudacao.lower())
             self.assertGreaterEqual(resposta.confidence, CONFIANCA_MINIMA)
             self.assertIn(
-                saudacao + ", sou o robô de atendimento do IFBA",
+                saudacao + ", sou o robô de atendimento da Polícia. Como posso te ajudar?",
                 resposta.text
             )
 
@@ -41,7 +41,7 @@ class TesteSaudacoes(unittest.TestCase):
             resposta = self.robo.get_response("oi, " + saudacao.lower())
             self.assertGreaterEqual(resposta.confidence, CONFIANCA_MINIMA)
             self.assertIn(
-                saudacao + ", sou o robô de atendimento do IFBA",
+                saudacao + ", sou o robô de atendimento da Polícia. Como posso te ajudar?",
                 resposta.text
             )
 

@@ -18,7 +18,7 @@ def comparar_mensagens(mensagem_digitada, mensagem_candidata):
     return confianca
 
 def iniciar():
-    robo = ChatBot("Robô de Atendimento do IFBA",
+    robo = ChatBot("Robô de Atendimento da Polícia",
                    read_only=True,
                 #    statement_comparison_function=comparar_mensagens,     
                    logic_adapters=[
